@@ -1,10 +1,9 @@
-import "./Home.css";
+import React from 'react'
 
 function Home() {
   return (
-    <div className="app-container">
-      <h1>Re-Colhe</h1>
-    </div>
-  );
+    <div>Home</div>
+  )
 }
-export default Home;
+
+export default Home
