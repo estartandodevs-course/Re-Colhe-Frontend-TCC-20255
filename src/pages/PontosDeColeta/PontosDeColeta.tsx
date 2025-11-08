@@ -1,3 +1,5 @@
+import Header from '../../components/Header/Header';
+import FooterNavBar from '../../components/FooterNavBar/FooterNavBar';
 import { useState } from 'react';
 import Map from '../../components/Map/Map';
 import SearchBar from '../../components/SearchBar/SearchBar';
@@ -18,27 +20,30 @@ const PontosDeColeta = () => {
   );
 
   return (
-    <main className="pontos-page">
-      <h1 className="pontos-title">Pontos de Coleta</h1>
+    <>
+      <Header />
+      <main className="pontos-page">
+        <h1 className="pontos-title">Pontos de Coleta</h1>
 
+        <Map locations={filteredLocations} className="pontos-map" />
 
-      <Map locations={filteredLocations} className="pontos-map" />
+        <section className="pontos-icons">
+          <div><img src={paper} alt="Papel" /><span>Papel</span></div>
+          <div><img src={plastic} alt="Plástico" /><span>Plástico</span></div>
+          <div><img src={metal} alt="Metal" /><span>Metal</span></div>
+          <div><img src={glass} alt="Vidro" /><span>Vidro</span></div>
+        </section>
 
-      <section className="pontos-icons">
-        <div><img src={paper} alt="Papel" /><span>Papel</span></div>
-        <div><img src={plastic} alt="Plástico" /><span>Plástico</span></div>
-        <div><img src={metal} alt="Metal" /><span>Metal</span></div>
-        <div><img src={glass} alt="Vidro" /><span>Vidro</span></div>
-      </section>
+        <h2 className="pontos-subtitle">
+          Encontre pontos de coleta e organizações perto de você
+        </h2>
 
-      <h2 className="pontos-subtitle">
-        Encontre pontos de coleta e organizações perto de você
-      </h2>
+        <SearchBar onSearch={setSearchTerm} className="pontos-search" />
 
-      <SearchBar onSearch={setSearchTerm} className="pontos-search" />
-
-      <LocationList locations={filteredLocations} className="pontos-list" />
-    </main>
+        <LocationList locations={filteredLocations} className="pontos-list" />
+      </main>
+      <FooterNavBar />
+    </>
   );
 };
 

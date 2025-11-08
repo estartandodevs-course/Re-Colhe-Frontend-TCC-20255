@@ -17,11 +17,11 @@ export const mockLocations: Location[] = [
   { id: 5, name: 'Papel Recicla 5', address: 'Rua E, 500', hours: '08:30-17:30', phone: '(21) 90000-0005', materials: ['papel'], position: [-22.755, -43.305] },
 
   // Plástico
-  { id: 6, name: 'Plástico Recicla 1', address: 'Av. A, 101', hours: '08:00-17:00', phone: '(21) 91111-0001', materials: ['plástico'], position: [-22.756, -43.306] },
-  { id: 7, name: 'Plástico Recicla 2', address: 'Av. B, 201', hours: '09:00-18:00', phone: '(21) 91111-0002', materials: ['plástico'], position: [-22.757, -43.307] },
-  { id: 8, name: 'Plástico Recicla 3', address: 'Av. C, 301', hours: '07:30-16:30', phone: '(21) 91111-0003', materials: ['plástico'], position: [-22.758, -43.308] },
-  { id: 9, name: 'Plástico Recicla 4', address: 'Av. D, 401', hours: '10:00-19:00', phone: '(21) 91111-0004', materials: ['plástico'], position: [-22.759, -43.309] },
-  { id: 10, name: 'Plástico Recicla 5', address: 'Av. E, 501', hours: '08:30-17:30', phone: '(21) 91111-0005', materials: ['plástico'], position: [-22.760, -43.310] },
+  { id: 6, name: 'Plástico Recicla 1', address: 'Av. A, 101', hours: '08:00-17:00', phone: '(21) 91111-0001', materials: ['plástico', 'plastico'], position: [-22.756, -43.306] },
+  { id: 7, name: 'Plástico Recicla 2', address: 'Av. B, 201', hours: '09:00-18:00', phone: '(21) 91111-0002', materials: ['plástico', 'plastico'], position: [-22.757, -43.307] },
+  { id: 8, name: 'Plástico Recicla 3', address: 'Av. C, 301', hours: '07:30-16:30', phone: '(21) 91111-0003', materials: ['plástico', 'plastico'], position: [-22.758, -43.308] },
+  { id: 9, name: 'Plástico Recicla 4', address: 'Av. D, 401', hours: '10:00-19:00', phone: '(21) 91111-0004', materials: ['plástico', 'plastico'], position: [-22.759, -43.309] },
+  { id: 10, name: 'Plástico Recicla 5', address: 'Av. E, 501', hours: '08:30-17:30', phone: '(21) 91111-0005', materials: ['plástico', 'plastico'], position: [-22.760, -43.310] },
 
   // Metal
   { id: 11, name: 'Metal Recicla 1', address: 'Trav. A, 102', hours: '08:00-17:00', phone: '(21) 92222-0001', materials: ['metal'], position: [-22.761, -43.311] },

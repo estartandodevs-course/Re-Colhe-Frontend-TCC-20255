@@ -38,7 +38,7 @@ const Login = () => {
       // Manter: além da mensagem, salvar token no localStorage/sessionStorage.
       setMensagem(`Login bem-sucedido como ${userType}!`);
 
-      // 🔹 Novo: salvar dados no localStorage para uso dinâmico nas próximas páginas
+      // salva dados no localStorage para uso dinâmico nas próximas páginas
       localStorage.setItem('token', result.data.token);
       localStorage.setItem('email', result.data.email);
       localStorage.setItem('userType', userType);
