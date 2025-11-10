@@ -1,33 +1,18 @@
-import { Link } from "react-router-dom";
-import "./Inicio.css"; // opcional: para estilos externos
+import ReColhe from '../../assets/logo/logo-re-colhe.png';
+import Lixeira from '../../assets/img/lixeira.png';
+import NavButton from '../../components/NavButton/NavButton';
+import './Inicio.css';
 
 function Inicio() {
   return (
-    <div className="inicio-container">
-      <header>
-        <h1>Página Inicial</h1>
-        <p>Bem-vindo ao sistema de coleta inteligente!</p>
-      </header>
-
-      <nav className="inicio-nav">
-        <ul>
-          <li><Link to="/perfil">Selecionar Perfil</Link></li>
-          <li><Link to="/login">Login</Link></li>
-          <li><Link to="/home">Home</Link></li>
-          <li><Link to="/menu">Menu</Link></li>
-          <li><Link to="/dados">Dados do Usuário</Link></li>
-          <li><Link to="/pevs">Pevs Favoritos</Link></li>
-          <li><Link to="/preferencias">Preferências</Link></li>
-          <li><Link to="/ajuda">Ajuda</Link></li>
-          <li><Link to="/notificacoes">Notificações</Link></li>
-          <li><Link to="/mapa">Mapa de Coleta</Link></li>
-          <li><Link to="/solicitacoes">Solicitações</Link></li>
-          <li><Link to="/informacoes">Informações</Link></li>
-          <li><Link to="/novasolicitacao">Nova Solicitação</Link></li>
-          <li><Link to="/dicas">Dicas de Reciclagem</Link></li>
-        </ul>
-      </nav>
-    </div>
+    <main className="inicio-main">
+      <section>
+        <img src={ReColhe} alt="Logo da Re.Colhe" className="logo" />
+        <h1 className="title-inicio">Transforme o jeito de descartar: Simples, digital e sustentável.</h1>
+        <img src={Lixeira} alt="Uma lixeira verde com símbolo de reciclagem branco, contendo terra e dessa terra nascendo duas folhas de uma planta." className="lixeira" />
+        <NavButton to="/selecionar-perfil" label="Começar" className="button-começar" />
+      </section>
+    </main>
   );
 }
 
